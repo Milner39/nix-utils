@@ -121,7 +121,7 @@ let
 
   # Create the module tree
   result = buildModuleTree {
-    dir = ./.;
+    dir = modulesDir;
     moduleArgs = { inherit configRoot; } // specialArgs;
     path = [ ];
   };
